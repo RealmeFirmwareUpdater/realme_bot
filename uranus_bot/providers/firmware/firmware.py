@@ -14,7 +14,7 @@ async def load_firmware_data():
     """
     async with ClientSession() as session:
         data = yaml.load(await fetch(session,
-                                     f'{GITHUB_ORG}/xiaomifirmwareupdater.github.io/master/'
+                                     f'{GITHUB_ORG}/realmefirmwareupdater.github.io/master/'
                                      f'data/devices/latest.yml'),
                          Loader=yaml.FullLoader)
         latest = {}
